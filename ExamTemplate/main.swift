@@ -25,7 +25,7 @@ var inputToProcess : Int = Int.max
 while inputToProcess == Int.max {
     
     // Show the prompt
-    print("Ask the question here? ", terminator: "")
+    print("How many votes?", terminator: "")
     
     // Get the user's input
     var input : String?
@@ -34,12 +34,17 @@ while inputToProcess == Int.max {
     // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
     if let notNilInput = input {
         
+        if let inputAsInteger = Int(notNilInput) {
+            if let inputAsInteger >= 1 || inputAsInteger <= 15 {
+            }
+            }
+        }
         // You probably need to add additional checks to be sure the
         // input received is valid
         // Add checks as needed...
         
         // Save the input given, as we are certain it's what we are looking for now
-        inputToProcess = notNilInput
+        inputToProcess = inputAsInteger
         
     }
     
