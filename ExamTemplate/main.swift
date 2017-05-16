@@ -35,7 +35,8 @@ while inputToProcess == Int.max {
     if let notNilInput = input {
         
         if let inputAsInteger = Int(notNilInput) {
-            if let inputAsInteger >= 1 || inputAsInteger <= 15 {
+            if inputAsInteger >= 1 || inputAsInteger <= 15 {
+                  inputToProcess = inputAsInteger
             }
             }
         }
@@ -44,11 +45,11 @@ while inputToProcess == Int.max {
         // Add checks as needed...
         
         // Save the input given, as we are certain it's what we are looking for now
-        inputToProcess = inputAsInteger
+
         
     }
     
-}
+
 
 /*
  
@@ -61,7 +62,7 @@ while inputToProcess == Int.max {
  */
 
 // Add 'process' code below....
-print("replace with process logic")
+
 
 
 /*
